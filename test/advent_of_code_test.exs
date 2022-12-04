@@ -18,4 +18,23 @@ defmodule AdventOfCodeTest do
       assert AOC.RockPaperScissors.part_two(@input) == 12
     end
   end
+
+  describe "day 3" do
+    @input """
+    vJrwpWtwJgWrhcsFMMfFFhFp
+    jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+    PmmdzqPrVvPwwTWBwg
+    wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+    ttgJtRGJQctTZtZT
+    CrZsJsPPZsGzwwsLwLmpwMDw
+    """
+
+    test "part one" do
+      assert AOC.RucksackReorganization.part_one(@input) == 157
+    end
+
+    test "part two" do
+      assert AOC.RucksackReorganization.part_two(@input) == 70
+    end
+  end
 end
